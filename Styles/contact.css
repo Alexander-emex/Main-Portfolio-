@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(rgba(255, 255, 255, 0.404),rgb(0, 0, 27)),url(../Images/pexels-bri-schneiter-346529.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 20px;
+}
+#header img{
+    width: 90px;
+    height: 75px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#header p{
+    margin-right: 45px;
+}
+#header p a{
+    text-decoration: none;
+    transition: 2s;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+}
+#header p a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 35%;
+    transform: translateX(-50% -50%);
+    background: rgba(79, 231, 79, 0.94);
+    transition: width 0.3s;
+}
+#header p a:hover::after{
+    width: 50%;
+    color: rgba(255, 255, 255, 0.637);
+    transform: scale(1.3);
+}
+
+.container h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    -webkit-text-stroke: 2px rgba(79, 231, 79, 0.94);
+    color: transparent;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    margin-bottom: 40px;
+    width: 100%;
+    /* color: rgba(255, 250, 250, 0.616); */
+}
+section h6{
+    color: rgba(255, 250, 250, 0.664);
+    font-size: 20px;
+    position: relative;
+    top: 70px;
+    font-family: cursive;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form{
+    position: relative;
+    top: 80px;
+    text-align: center;
+    width: 100%;
+}
+.form2{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+input{
+    margin: 17px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    color: aliceblue;
+    border-bottom:1px solid rgba(79, 231, 79, 0.94);
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 1rem;
+    font-family: fantasy;
+
+}
+textarea{
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.808);
+    text-align: left;
+    background: transparent;
+    border:1px solid rgba(79, 231, 79, 0.94);
+}
+#igbo{
+    width: 100%;
+    position: relative;
+    /* margin-top: 50%; */
+    display: block;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#container h2{
+    width: 100%;
+    font-size: 15px;
+}
+
